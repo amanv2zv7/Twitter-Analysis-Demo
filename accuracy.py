@@ -133,5 +133,3 @@ confusion_matrix(answer,observed)
 print ('Rule Based:       ',count['RB'])
 print ('Lexicon Based:    ',count['LB'])
 print ('Machine Learning: ',count['ML'])'''
-
-a
