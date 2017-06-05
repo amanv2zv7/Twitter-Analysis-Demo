@@ -157,7 +157,7 @@ def pre_process(tweet_messages):
         if (i==' '):
           count+=1
     count+=1
-    ark_tweet_cmd = ['/home/akhil/Desktop/TwitterHybridClassifier/Tools/ark-tweet-nlp/runTagger.sh', '--input-format', 'text', '--output-format', 'conll', '--no-confidence', '--quiet']
+    ark_tweet_cmd = ['/home/aman/Desktop/TwitterHybridClassifier/Tools/ark-tweet-nlp/runTagger.sh', '--input-format', 'text', '--output-format', 'conll', '--no-confidence', '--quiet']
 
     tweets = '\n'.join(tweet_messages)
     #print (len(tweets))
