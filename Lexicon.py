@@ -31,14 +31,14 @@ class LexiconClassifier(object):
     def read_opinionlex(self):
 
         # read positive words
-        with codecs.open('/home/akhil/Desktop/TwitterHybridClassifier/Data/Lexicon/opinion-lexicon-English/positive-words.txt', 'r', encoding='utf8') as f:
+        with codecs.open('/home/aman/Desktop/TwitterHybridClassifier/Data/Lexicon/opinion-lexicon-English/positive-words.txt', 'r', encoding='utf8') as f:
             words = f.read().splitlines()
         pos_words = [w for w in words if not w.startswith(';')]
         pos_words.remove('')
         positive_words = {k:1 for k in pos_words}
 
         # read negative words
-        with codecs.open('/home/akhil/Desktop/TwitterHybridClassifier/Data/Lexicon/opinion-lexicon-English/negative-words.txt', 'r', encoding='utf8') as f:
+        with codecs.open('/home/aman/Desktop/TwitterHybridClassifier/Data/Lexicon/opinion-lexicon-English/negative-words.txt', 'r', encoding='utf8') as f:
             words = f.read().splitlines()
         neg_words = [w for w in words if not w.startswith(';')]
         neg_words.remove('')
@@ -52,12 +52,12 @@ class LexiconClassifier(object):
         return dictionary
 
     def read_negation_words(self):
-        with codecs.open('/home/akhil/Desktop/TwitterHybridClassifier/Data/Lexicon/negating_word_list.txt', 'r',encoding='utf8') as f:
+        with codecs.open('/home/aman/Desktop/TwitterHybridClassifier/Data/Lexicon/negating_word_list.txt', 'r',encoding='utf8') as f:
             negation_words = f.read().splitlines()
         return negation_words
 
     def read_sentiment_hashtags(self):
-        with codecs.open('/home/akhil/Desktop/TwitterHybridClassifier/Data/Lexicon/NRC-Hashtag-Sentiment-Lexicon-v0.1/sentimenthashtags.txt', 'r', encoding='utf8') as f:
+        with codecs.open('/home/aman/Desktop/TwitterHybridClassifier/Data/Lexicon/NRC-Hashtag-Sentiment-Lexicon-v0.1/sentimenthashtags.txt', 'r', encoding='utf8') as f:
             hashtags = f.read().splitlines()
         sentiment_hashs = dict()
         for hashtag in hashtags:
